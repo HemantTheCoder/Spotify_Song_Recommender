@@ -21,3 +21,19 @@ A user-friendly GUI application built with Python and Tkinter that recommends so
 
 ```bash
 git clone https://github.com/HemantTheCoder/Spotify_Song_Recommender.git
+```
+Install the required dependencies:
+```bash
+pip install spotipy
+```
+Run the application:
+```bash
+python main.py
+```
+
+Enter your Spotify username and playlist ID, then click "Get Recommendations" to view initial recommendations.
+Provide feedback on the recommended songs using the radio buttons.
+Click "Show Improved Recommendations" to see new recommendations based on your feedback.
+
+# Contributors
+HemantTheCoder
