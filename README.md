@@ -4,7 +4,6 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/HemantTheCoder/Spotify_Song_Recommender)
 ![GitHub stars](https://img.shields.io/github/stars/HemantTheCoder/Spotify_Song_Recommender?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/HemantTheCoder/Spotify_Song_Recommender?style=social)
-![Twitter Follow](https://img.shields.io/twitter/follow/your_twitter?style=social)
 
 A user-friendly GUI application built with Python and Tkinter that recommends songs on Spotify based on a user's playlist and provides options for feedback to improve recommendations.
 
