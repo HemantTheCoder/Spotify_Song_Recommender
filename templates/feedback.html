@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<body>
+    <h1>Feedback Received</h1>
+    <table border="1">
+        <tr>
+            <th>Username</th>
+            <th>Song Name</th>
+            <th>Feedback</th>
+        </tr>
+        {% for feedback in feedback_data %}
+        <tr>
+            <td>{{ feedback.username }}</td>
+            <td>{{ feedback.song_name }}</td>
+            <td>{% if feedback.feedback %} Like {% else %} Dislike {% endif %}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <h2>Accuracy Report</h2>
+    <p>Total Feedback Received: {{ feedback_data|length }}</p>
+    <p>Total Likes: {{ feedback_data|selectattr('feedback', 'equalto', True)|list|length }}</p>
+    <p>Total Dislikes: {{ feedback_data|selectattr('feedback', 'equalto', False)|list|length }}</p>
+</body>
+</html>
